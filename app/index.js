@@ -14,16 +14,27 @@ const Home = () => {
   const router = useRouter();
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWight }}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: COLORS.lightWight,
+      }}
+    >
       <Stack.Screen
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerLeft: () => (
-            <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+            <ScreenHeaderBtn
+              iconUrl={icons.menu}
+              dimension='60%'
+            />
           ),
           headerRight: () => (
-            <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
+            <ScreenHeaderBtn
+              iconUrl={images.profile}
+              dimension='100%'
+            />
           ),
           headerTitle: "",
         }}
